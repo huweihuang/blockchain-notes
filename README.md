@@ -19,14 +19,17 @@
 
 ## 区块链
 
-* [密钥和地址](blockchain/blockchain-keys&addresses.md)
-* [比特币交易](blockchain/blockchain-transactions.md)
-* [区块链介绍](blockchain/blockchain-introduction.md)
+* [区块链系列（四）之密钥和地址](blockchain/blockchain-keys&addresses.md)
+* [区块链系列（五）之比特币钱包](blockchain/blockchain-wallets.md)
+* [区块链系列（六）之比特币交易](blockchain/blockchain-transactions.md)
+* [区块链系列（八）之区块链介绍](blockchain/blockchain-introduction.md)
+* [区块链系列（九）之挖矿与共识](blockchain/mining-and-consensus.md)
+* [区块链系列（十）之共识算法](blockchain/consensus-algorithm.md)  
 
 ## 以太坊
 
-* [以太坊介绍](ethereum/ethereum-introduction.md) 
-* [账户管理](ethereum/ethereum-account-management.md) 
+* [以太坊系列（一）之以太坊介绍](ethereum/ethereum-introduction.md) 
+* [以太坊系列（二）之账户管理](ethereum/ethereum-account-management.md) 
 
 
 # 赞赏
