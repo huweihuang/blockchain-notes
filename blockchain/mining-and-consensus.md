@@ -62,7 +62,7 @@ Total BTC to ever be created: 2099999997690000 Satoshis
 
 **比特币货币供应量曲线图**
 
-![bitcoin-supply](bitcoin-supply.png)
+![bitcoin-supply](https://res.cloudinary.com/dqxtn0ick/image/upload/v1557219634/article/blockchain/bitcoin-supply.png)
 
 **通货紧缩货币**
 
