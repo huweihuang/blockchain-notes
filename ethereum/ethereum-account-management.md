@@ -24,7 +24,7 @@
 
 #### 3.1.1. 下载安装
 
-```shell
+```bash
 # 下载源码
 git clone https://github.com/ethereum/go-ethereum.git
 # 编译
@@ -38,7 +38,7 @@ geth --help
 
 > go的版本最好在`1.9.2`及以上版本，否则编译可能报以下错误
 >
-> ```shell
+> ```bash
 > ...
 > # github.com/ethereum/go-ethereum/vendor/gopkg.in/olebedev/go-duktape.v3
 > vendor/gopkg.in/olebedev/go-duktape.v3/duktape.go:133: constant 18446744073709551615 overflows int64
@@ -51,7 +51,7 @@ geth --help
 
 `geth account new`
 
-```shell
+```bash
 # 交互式，输入密码
 $ geth account new
 INFO [07-09|05:06:46.393] Maximum peer count                       ETH=25 LES=0 total=25
@@ -72,7 +72,7 @@ Address: {0ad31ccaf888cf8499de4cdfa18f8d746a1d27e7}
 
 `geth account list`
 
-```shell
+```bash
 $ geth account list
 INFO [07-09|05:29:31.708] Maximum peer count                       ETH=25 LES=0 total=25
 Account #0: {df90109c1497bc6f3a0cd98cdc114ec89481447e} keystore:///root/.ethereum/keystore/UTC--2018-07-08T21-07-05.374654217Z--df90109c1497bc6f3a0cd98cdc114ec89481447e
@@ -81,7 +81,7 @@ Account #1: {0ad31ccaf888cf8499de4cdfa18f8d746a1d27e7} keystore:///root/.ethereu
 
 `keyfiles`存储在`~/.ethereum/keystore`路径下，一般按照创建时间顺序排列，格式如下：
 
-```shell
+```bash
 $ cd .ethereum/keystore
 $ ls
 UTC--2018-07-08T21-07-05.374654217Z--df90109c1497bc6f3a0cd98cdc114ec89481447e
@@ -90,7 +90,7 @@ UTC--2018-07-08T21-27-48.567366972Z--0ad31ccaf888cf8499de4cdfa18f8d746a1d27e7
 
 keyfile的文件内容如下：
 
-```shell
+```bash
 $ cat UTC--2018-07-08T21-07-05.374654217Z--df90109c1497bc6f3a0cd98cdc114ec89481447e | python -m json.tool
 {
     "address": "df90109c1497bc6f3a0cd98cdc114ec89481447e",
@@ -119,7 +119,7 @@ $ cat UTC--2018-07-08T21-07-05.374654217Z--df90109c1497bc6f3a0cd98cdc114ec894814
 
 使用geth控制台创建新账户，需要在控制台模式下开启geth交互模式。
 
-```shell
+```bash
 $ geth console 2>> file_to_log_output
 Welcome to the Geth JavaScript console!
 
@@ -136,7 +136,7 @@ at block: 0 (Thu, 01 Jan 1970 08:00:00 CST)
 
 `personal.newAccount()`
 
-```shell
+```bash
 > personal.newAccount()
 Passphrase:
 Repeat passphrase:
@@ -147,7 +147,7 @@ Repeat passphrase:
 
 `eth.accounts`
 
-```shell
+```bash
 > eth.accounts
 ["0xdf90109c1497bc6f3a0cd98cdc114ec89481447e", "0x0ad31ccaf888cf8499de4cdfa18f8d746a1d27e7", "0x06341612bc695a2cab1d294630ce44f8789efabc"]
 ```
@@ -160,7 +160,7 @@ Repeat passphrase:
 
 以下通过`账户地址`来修改密码：
 
-```shell
+```bash
 $ geth account update df90109c1497bc6f3a0cd98cdc114ec89481447e
 INFO [07-09|06:02:53.411] Maximum peer count                       ETH=25 LES=0 total=25
 Unlocking account df90109c1497bc6f3a0cd98cdc114ec89481447e | Attempt 1/3
@@ -173,7 +173,7 @@ Repeat passphrase:
 
 也可以通过`账户索引`来修改密码：
 
-```shell
+```bash
 # 以下示例的账号索引为 0
 $ geth account update 0
 INFO [07-09|06:05:59.087] Maximum peer count                       ETH=25 LES=0 total=25
@@ -192,7 +192,7 @@ Repeat passphrase:
 
 可以通过`--password`参数修改，仍需要输入文件中的密码：
 
-```shell
+```bash
 geth --password ethpasswd account update 0ad31ccaf888cf8499de4cdfa18f8d746a1d27e7
 INFO [07-09|06:10:16.564] Maximum peer count                       ETH=25 LES=0 total=25
 Unlocking account 0ad31ccaf888cf8499de4cdfa18f8d746a1d27e7 | Attempt 1/3
@@ -214,7 +214,7 @@ Repeat passphrase:
 
 **导入未加密的私钥**
 
-```shell
+```bash
 geth account import /path/to/<keyfile>
 ```
 

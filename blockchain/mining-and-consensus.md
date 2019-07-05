@@ -55,7 +55,7 @@ print "Total BTC to ever be created:", max_money(), "Satoshis"
 
 运行 max_money.py 脚本
 
-```shell
+```bash
 $ python max_money.py
 Total BTC to ever be created: 2099999997690000 Satoshis
 ```
@@ -149,7 +149,7 @@ Priority = Sum (Value of input * Input Age) / Transaction Size
 
 例如：
 
-```shell
+```bash
 $ bitcoin-cli getrawtransaction
 d5ada064c6417ca25c4308bd158c34b77e1c0eca2a73cda16c737e7424afba2f 1
 ```
@@ -269,7 +269,7 @@ d5ada064c6417ca25c4308bd158c34b77e1c0eca2a73cda16c737e7424afba2f 1
 
 假设$x_0$为`I am Satoshi Nakamoto`，$x$为某个数字（即Nonce值），通过不断更改$x$ 的值，将$x$添加到$x_0$末尾并计算其哈希值，直到找到一个$x$使得得出的哈希值的`十六进制`表示以`0`开头（即target值）。
 
-```shell
+```bash
 $ python hash_example.py
 
 I am Satoshi Nakamoto0 => a80a81401765c8eddee25df36728d732...

@@ -92,7 +92,7 @@ y = 07CF33DA18BD734C600B96A72BBC4749D5141C90EC8AC328AE52DDFE2E505BDB
 
 **示例：**
 
-``` shell
+``` bash
 # K是公钥，A是生成的比特币地址。
 A = RIPEMD160(SHA256(K))
 ```
@@ -186,21 +186,21 @@ Base58是Base64编码格式的子集，使用大小写字母和10个数字，舍
 
 1. 将Base58Check编码解码为十六进制
 
-   ```shell
+   ```bash
    $ sx base58check-decode 5J3mBbAH58CpQ3Y5RNJpUKPE62SQ5tfcvU2JpbnkeyhfsYB1Jcn
    1e99423a4ed27608a15a2616a2b0e9e52ced330ac530edcc32c8ffc6a526aedd 128
    ```
 
 2. 将十六进制转换为Base58Check编码
 
-   ```shell
+   ```bash
    $sx base58check-encode 1e99423a4ed27608a15a2616a2b0e9e52ced330ac530edcc32c8ffc6a526aedd 128 
    5J3mBbAH58CpQ3Y5RNJpUKPE62SQ5tfcvU2JpbnkeyhfsYB1Jcn
    ```
 
 3. 将十六进制（压缩格式密钥）转换为Base58Check编码
 
-   ```shell
+   ```bash
    $ sx base58check-encode 1e99423a4ed27608a15a2616a2b0e9e52ced330ac530edcc32c8ffc6a526aedd01 128
    KxFC1jmwwCoACiCAWZ3eXa96mBM6tb3TYzGmf6YwgdGWZgawvrtJ
    ```
@@ -215,7 +215,7 @@ Base58是Base64编码格式的子集，使用大小写字母和10个数字，舍
 
 示例：
 
-```shell
+```bash
 # x,y值
 x = F028892BAD7ED57D2FB57BF33081D5CFCF6F9ED3D3D7F159C2E2FFF579DC341A
 y = 07CF33DA18BD734C600B96A72BBC4749D5141C90EC8AC328AE52DDFE2E505BDB
@@ -232,7 +232,7 @@ K=04F028892BAD7ED57D2FB57BF33081D5CFCF6F9ED3D3D7F159C2E2FFF579DC341A07CF33DA18BD
 
 **示例：**
 
-```shell
+```bash
 # 前缀03，表示y坐标是奇数
 K = 03F028892BAD7ED57D2FB57BF33081D5CFCF6F9ED3D3D7F159C2E2FFF579DC341A
 ```

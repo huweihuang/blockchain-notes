@@ -28,7 +28,7 @@ HD钱包的优势：
 - 树状组织结构可以用来额外表达组织含义，例如一个分支用来付款，一个分支用来收款。
 - 可以创建一个公共密钥序列而不需要访问相对应的私钥，这可允许HD钱包在不安全的服务器中使用或者在每笔交易中发行不同的公共钥匙。
 
-<img src="HD_wallet.png" width="60%"/>
+<img src="https://res.cloudinary.com/dqxtn0ick/image/upload/v1529821946/article/blockchain/HD_wallet.png" width="60%"/>
 
 ### 1.4. 种子密钥和助记词
 
