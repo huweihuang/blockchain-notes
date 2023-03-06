@@ -34,7 +34,7 @@
         "ga",
         "disqus",
         "donate",
-        "google-adsense"
+        "google-ads"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -94,14 +94,10 @@
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
         },
-        "google-adsense": {
+        "google-ads": {
             "ads": [
                 {
-                    "client": "ca-pub-8205636531078391",
-                    "slot": "6823891436",
-                    "format": "auto",
-                    "location": ".page-inner section",
-                    "style": "width: 100px;"
+                    "client": "ca-pub-8205636531078391"
                 }
             ]
         }
